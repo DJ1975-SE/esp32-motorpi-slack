@@ -216,9 +216,10 @@ void readAllData(Measurement *Meas, int lastwritetime)
   Meas->sensorreadtime = millis() - startMillis;
 
 //debug for display
+/*
   Meas->rpm=12345;
   Meas->afrvoltage0=3;
   Meas->calculatedafr=Meas->afrvoltage0 * AFRFACTOR;
-  
+*/  
   return;
 }
