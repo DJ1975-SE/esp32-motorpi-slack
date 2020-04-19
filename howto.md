@@ -4,7 +4,7 @@
 * Install support for the ESP32 (https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md). Basically this means add https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json as an additional Board Manager URL, and then pick the right board. Description & Video also under https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
 * Choose the right Board (in my case ESP32 Dev Module, default settings seems OK to me)
 * Choose the right Port (in my case /dev/ttyUSB1)
-#### Libraries - the links are just for reference and credits, all this is in the IDE ####
+#### Libraries - the links are just for reference and credits. Add the libraries through the IDE, do not download them manually ####
 * Via "Manage Libraries" Install the following libraries (and their dependencies, IDE will ask latest at BME280, just choose to "install all"):
     * TFT_eSPI by Bodmer (https://github.com/Bodmer/TFT_eSPI) - *important use version 2.1.9*
     * ESP8266 Influxdb by Tobias Schruerg, Influxdata (https://github.com/tobiasschuerg/InfluxDB-Client-for-Arduino)
@@ -16,6 +16,7 @@
     * Websockets by Markus Sattler (https://github.com/Links2004/arduinoWebSockets)
     * MD_MAX72XX by majicDesigns (https://github.com/MajicDesigns/MD_MAX72XX)
     * Adafruit MPU6050 by Adafruit (https://github.com/adafruit/Adafruit_MPU6050)
+    * Time by Michael Margolis (https://github.com/michaelmargolis/arduino_time)
 #### ST7735 is special #####
 * Set the parameters for the ST7735 display:
     * go into the libraries/TFT_eSPI folder and open the file "User_Setup.h"
